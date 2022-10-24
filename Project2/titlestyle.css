@@ -1,0 +1,118 @@
+
+.stir{
+    color: #F59B9B;
+    text-align: center;
+}
+
+h6{
+    font-family: Potta One;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-size: 100px;
+}
+
+h4{
+    font-family: kanit;
+    font-size: 30px;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.homebuttons{
+    text-align: center;
+}
+
+button{
+    background-color: #A33327;
+    border: none;
+    font-family: kanit;
+    color: #e2e2e2;
+    font-size: 15px;
+    display: inline-block;
+    border-radius: 60px;
+    padding: 20px 50px;
+    margin-right: 50px;
+
+}
+
+button:hover{
+    color: black;
+    background-color: #FFA500;
+    transition: ease-in-out;
+}
+
+.hp{
+    margin-top: 20px;
+    width: 1400px;
+    height: auto;
+}
+
+.col-33{
+    display: flex;
+}
+
+h3{
+    padding-right: 33.3%;
+    font-family: kanit;
+    font-size: 25px;
+    color: #F59B9B;
+}
+
+.col-33-list{
+    display: flex;
+    font-family: kanit;
+    color: #F59B9B;
+}
+
+.col-33-list ul{
+    margin-right: 19%;
+}
+
+.ing{
+    height: 400px;
+    width: auto;
+    padding-bottom: 80px;
+    margin-bottom: 90px;
+}
+
+.col-50{
+    display: flex;
+    margin-right: 50px;
+}
+
+h2{
+    margin-top: 0px;
+    font-family: kanit;
+    color: #F59B9B;
+    font-size: 30px;
+}
+
+p{
+    font-family: kanit;
+    color: #F59B9B;
+}
+
+.steppics{
+    width: 500px;
+    height: auto;
+    padding-bottom: 20px;
+    padding-right: 100px;
+}
+
+.stepbuttons{
+    text-align: center;
+    padding-bottom: 20px;
+
+}
+
+.col-steps-list{
+    display: flex;
+    font-family: kanit;
+    color: #F59B9B;
+}
+
+.steplist{
+    width: 50%;
+    padding-left: 100px;
+
+}
