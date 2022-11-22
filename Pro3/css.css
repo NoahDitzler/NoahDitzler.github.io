@@ -1,0 +1,80 @@
+html{
+    height: 100%;
+}
+
+body{
+    background: linear-gradient(180deg,#D21C18 30%, #E54E1A , #FC881C , #F48736 );
+    height: 100%;
+    margin-top: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.subhead{
+    font-size: 40px;
+}
+
+.home-info{
+    display: flex;
+    font-family: righteous;
+    font-size: 50px;
+    margin-top: 25px;
+    margin-left: 150px;
+    text-align: center;
+}
+
+.cover-art{
+    margin-left: 100px;
+}
+
+.wells{
+    color: white;
+    text-align: center;
+    font-size: 100pt;
+    padding-top: 20px;
+    font-family: gothic-open-shaded, sans-serif;
+}
+
+/*Smallest Screen Display========================================*/
+@media screen and (max-width: 768px) and (min-width: 100px){
+    .wells{
+        font-size: 50pt;
+    }
+
+    .subhead{
+        font-size: 20px;
+    }
+
+    .home-info{
+        display: inline-block;
+        font-family: righteous;
+        font-size: 20px;
+        margin-top: 25px;
+        margin-left: 30px;
+    }
+
+    .cover-art{
+        margin-left: 1px;
+        margin-top: 20px;
+    }
+
+
+}
+
+/*Largest Screen Display========================================*/
+@media screen and (max-width: 1440px) and (min-width: 769px){
+    .home-info{
+        display: flex;
+        font-family: righteous;
+        font-size: 30px;
+        margin-top: 25px;
+        margin-left: 120px;
+    }
+
+    .cover-art{
+        margin-left: 1px;
+        margin-top: 20px;
+    }
+
+
+}
