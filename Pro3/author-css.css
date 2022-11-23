@@ -1,0 +1,43 @@
+.author-info{
+    margin-right: 200px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    margin-left: 50px;
+    text-align: justify;
+}
+
+.wells-photos{
+    margin: 0;
+}
+
+.wells-pic{
+    display: flex;
+    margin-left: 200px;
+    margin-top: 20px;
+}
+
+.wells-header{
+    font-family: righteous;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) and (min-width: 100px){
+
+    .wells-pic{
+        display: inline-block;
+        margin-left: 20px;
+    }
+
+    .author-info{
+        margin-left: 0;
+        font-size: 12px;
+        margin-right: 420px;
+    }
+
+    .wells-photos{
+        margin-left: 100px;
+        margin-right: 500px;
+    }
+
+}

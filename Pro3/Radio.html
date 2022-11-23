@@ -11,7 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css.css">
-    <title>H G Wells Homepage</title>
+    <link rel="stylesheet" href="radio-css.css">
+    <title>Radio Broadcast</title>
 </head>
 <body>
     
@@ -47,25 +48,29 @@
 
 <script src="jscript.js"></script>
 
-<div class = "home-info">
-    <h1>The War of <br> the Worlds
-    <p class = "subhead">The Book That Helped Terrify the Nation!</p>
-    <a href="https://www.barnesandnoble.com/w/war-of-the-worlds-h-g-wells/1100026498?ean=9781593083625" target="_blank">
-        <button class = "radio-button">
-            Buy the Book
-        </button>
-        </a>
-    </h1>
-    <div class = "cover-art">
-        <picture>
-            <source media="(max-width: 768px)" srcset="pics/cover-large.jpg" />
-            <source media="(min-width: 1440px)" srcset="pics/cover-1.jpg" />
-            <img src="pics/cover-1.jpg" alt="cover art of the book War of the Worlds by H G Wells">
-          </picture>
-    </div>
+    <div class = "radio-page">
+        <div class = "radio-pic">
+            <picture>
+                <source media="(max-width: 768px)" srcset="pics/radio-small.jpg" />
+                <source media="(min-width: 1440px)" srcset="pics/radio-large.jpg" />
+                <img src="pics/radio-large.jpg" alt="Orson Wells and other actors performing the radio broadcast of War of the Worlds">
+              </picture>
+        </div>
 
-    
-</div>
+        <div class = "radio-info">
+            <p class = "radio-header">
+                The Radio Broadcast That Terrified the Nation!
+            </p>
+            <p>
+                On October 30, 1977 Orson Welles accidentally sent many in the US into panic over a realistic radio adaptation of H. G. Well’s “The War of the Worlds”. The adaptation was written to sound like a real news broadcast. Anybody who hadn’t tuned in at the exact start of the show, missed the message telling people this was an work of fiction. You can listen to it yourself online.
+            </p>
+            <a href="https://www.youtube.com/watch?v=Xs0K4ApWl4g&t=13s" target="_blank">
+            <button class = "radio-button">
+                Listen to the Broadcast
+            </button>
+            </a>
+        </div>
+    </div>
 
 </body>
 </html>

@@ -35,6 +35,34 @@ body{
     font-family: gothic-open-shaded, sans-serif;
 }
 
+.radio-button{
+    margin-top: 30px;
+    padding: 15px 15px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: black;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    font-size: 20px;
+}
+
+.radio-button:hover{
+    background-color: black;
+    color: #FC881C;
+    box-shadow: 0 0px;
+    transform: translateY(4px);
+}
+
+.radio-button:active {
+  background-color: black;
+  box-shadow: 0 0px #666;
+  transform: translateY(4px);
+}
+
 /*Smallest Screen Display========================================*/
 @media screen and (max-width: 768px) and (min-width: 100px){
     .wells{
