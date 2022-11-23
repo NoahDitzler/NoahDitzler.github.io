@@ -1,0 +1,72 @@
+.synopsis-page{
+    display: flex;
+    margin-top: 50px;
+}
+
+.quote{
+    font-family: gothic-open-shaded;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 50px;
+}
+
+.synopsis{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    margin-left: 150px;
+    margin-right: 150px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.book-info{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    margin-right: 50px;
+}
+
+.synopsis-header{
+    font-family: righteous;
+    font-size: 20pt;
+}
+
+.info-header{
+    font-family: righteous;
+    font-size: 20pt;
+}
+
+@media screen and (max-width: 768px) and (min-width: 100px){
+    .synopsis-page{
+        display: inline-block;
+    }
+
+    .quote{
+        margin-right: 50px;
+        font-size: 15px;
+        margin-bottom: 40px;
+    }
+
+    .synopsis-header{
+        margin-left: 1px;
+    }
+
+    .synopsis{
+        font-size: 12px;
+        margin-left: 20px;
+        margin-right: 40px;
+        text-align: justify;
+        margin-bottom: 40px;
+    }
+
+    .info-header{
+        margin-left: 0px;
+    }
+
+    .book-info{
+        margin-left: 20px;
+        font-size: 12px;
+        margin-bottom: 40px;
+    }
+
+
+}
