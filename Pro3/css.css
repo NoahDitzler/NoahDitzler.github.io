@@ -4,10 +4,12 @@ html{
 
 body{
     background: linear-gradient(180deg,#D21C18 30%, #E54E1A , #FC881C , #F48736 );
+    
     height: 100%;
     margin-top: 0;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    max-height: 1024px;
 }
 
 .subhead{
