@@ -1,0 +1,85 @@
+    body{
+    background-image: linear-gradient(black,rgba(0, 0, 0, 0.973), rgba(0, 0, 0, 0.829));
+  }
+
+  .logo {
+    height: 100px;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  
+
+
+  .desktop {
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 680px;
+    width: 100%;
+    display: flex;
+  }
+
+  div {
+    flex: 1;
+    width: 30%;
+  }
+
+  .icon {
+    flex: 30%;
+  }
+
+  .pic {
+    flex: 100%;
+    width: 50%;
+  }
+
+  .welcome {
+    font-family: chainprinter;
+    font-size: 20px;
+    color: #f24b0f;
+    text-align: center;
+    
+  }
+
+  .listen{
+    align-self: center;
+  }
+
+  .spotify{
+    width: 15%;
+  }
+
+  .spotify-button{
+    font-family: chainprinter;
+    border-radius: 30px;
+    border: 0px;
+    background-color: #A64D2D;
+    width: 60%;
+    height: 30%;
+    font-size: 17px;
+  }
+
+  .spotify-button:hover{
+    background-color: #f24b0f;
+    color: white;
+    cursor: pointer;
+  }
+
+
+  @media(max-width: 768px) {
+    .desktop div {
+      flex: 1;
+      width: 100%;
+    }
+    .icon{
+      order: -1;
+      flex: 2;
+    }
+   .pic {
+      flex: 5;
+    }
+    .welcome {
+      flex: 1;
+    }
+  }
