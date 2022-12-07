@@ -1,0 +1,275 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: rgb(0, 0, 0);
+	width: 100%;
+	height: 100vh;
+}
+
+.desc {
+	width: 600px;
+	color: white;
+	font-size: 15.81755127px;
+	margin-top: 40px;
+	text-align: left;
+	padding-left: 60px;
+	padding-right: 60px;
+}
+
+
+.home-content {
+	width: 100%;
+	height: 82%;
+	border: 1p solid #fff;
+	display: flex;
+	text-align: center;
+}
+
+.welcome , .home-img {
+	width: 50%;
+	height: 100%;
+	border: #FFF 30px;
+	display: flex;
+}
+
+.welcome-content {
+	font-family: 'Averia Libre';
+	font-weight:lighter;
+	color: #FFF;
+	margin-left: 20%;
+}
+
+.home-content .welcome {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.home-title {
+	color: white;
+	font-size: 110px;
+	font-family: 'Jolly Lodger', cursive;
+	letter-spacing: 5px;
+	font-weight: lighter;
+}
+
+.home-subtitle {
+	font-size: 41.40914717px;
+	margin-top: 0;
+}
+
+.spotify-button {
+	color: black;
+	background-color: orange;
+	font-family: 'Averia Libre';
+	font-weight: bolder;
+	font-size: 20px;
+	margin: auto;
+	margin-top: 40px;
+	padding: 5px 15px;
+	border-radius: 100px;
+	display: flex;
+	align-items: center;
+	transition: .3s linear;
+	cursor: pointer;
+	outline: none;
+	border: none;
+}
+
+.spotify-button:hover {
+	background-color: aqua;
+}
+
+.spotify-pill {
+	width: 40px;
+	height: auto;
+	margin-right: 5px;
+}
+
+nav {
+	position: relative;
+	z-index: 99;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #F24B0F;
+	color: rgb(0, 0, 0);
+	padding: 1rem 1.5rem;
+}
+
+nav h1 {
+    letter-spacing: 3px;
+	font-family: 'Jolly Lodger', cursive;
+    font-weight: lighter;
+    font-size: 32.36pt;
+	padding: 0.5rem 1rem;
+	padding-right: calc(1rem - 5px);
+	border: 2px solid rgb(0, 0, 0);
+}
+
+nav h1:hover {
+	color: rgb(255, 255, 255);
+    cursor: pointer;
+    border: 2px solid rgb(255, 255, 255);
+    transition: .6s;
+    filter: blur(0);
+}
+
+.menu {
+	display: none;
+	align-items: center;
+	margin: 0 -1rem;
+}
+
+.menu a {
+    font-family: 'Averia Libre';
+    font-size: 20pt;
+	margin: 0 1rem;
+	color: rgb(0, 0, 0);
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+.menu a:hover {
+	color: crimson;
+}
+
+.hamburger {
+	appearance: none;
+	outline: none;
+	border: none;
+	background: none;
+	cursor: pointer;
+
+	display: block;
+	width: 2rem;
+	height: 2rem;
+}
+
+.hamburger span {
+	color: #FFF;
+	font-size: 2rem;
+}
+
+.mobile-menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 98;
+
+	padding-top: 6rem;
+	opacity: 0;
+	transform: translateY(-100%);
+	background-color: #000;
+	color: #FFF;
+	transition: 0.3s;
+}
+
+.mobile-menu.is-open {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.mobile-menu a {
+	display: block;
+	padding: 1rem;
+	color: #FFF;
+	text-align: center;
+	text-decoration: none;
+	font-size: 1.25rem;
+	transition: 0.3s;
+}
+
+.mobile-menu a:hover {
+	color: crimson;
+	background-color: #FFF;
+}
+
+@media (min-width: 768px) {
+	.mobile-menu, .hamburger {
+		display: none;
+	}
+
+	.menu {
+		display: flex;
+	}
+	
+}
+
+@media (max-width: 768px) {
+	.welcome , .home-img {
+		width: 100%;
+		height: auto;
+		border: #FFF 30px;
+		flex-direction: column-reverse;
+		margin-left: 0;
+	}
+
+	.home-content , .welcome-content {
+		width: 100%;
+		height: auto;
+		margin-left: 0;
+		flex-direction: column-reverse;
+	}
+
+	.desc {
+		width: 600px;
+		color: white;
+		font-size: 12px;
+		margin-top: 30px;
+		text-align: left;
+		padding-left: 60px;
+		padding-right: 200px;
+	}
+
+	.person-pic {
+		margin-left: 20px;
+	}
+	
+	.home-title {
+		color: white;
+		font-size: 50px;
+		font-family: 'Jolly Lodger', cursive;
+		letter-spacing: 5px;
+		font-weight: lighter;
+	}
+	
+	.home-subtitle {
+		font-size: 20px;
+		margin-top: 0;
+	}
+	
+	.spotify-button {
+		color: black;
+		background-color: orange;
+		font-family: 'Averia Libre';
+		font-weight: bolder;
+		font-size: 12px;
+		margin: auto;
+		margin-top: 30px;
+		padding: 1px 10px;
+		border-radius: 100px;
+		display: flex;
+		align-items: center;
+		transition: .3s linear;
+		cursor: pointer;
+		outline: none;
+		border: none;
+	}
+	
+	.spotify-button:hover {
+		background-color: aqua;
+	}
+	
+	.spotify-pill {
+		width: 40px;
+		height: auto;
+		margin-right: 5px;
+	}
+}
