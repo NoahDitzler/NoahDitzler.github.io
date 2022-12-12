@@ -47,6 +47,7 @@ nav h1 {
 	padding: 0.5rem 1rem;
 	padding-right: calc(1rem - 5px);
 	filter: drop-shadow(1.5px 3px 1px #5a1901);
+	border: none;
 }
 
 nav h1:hover {
