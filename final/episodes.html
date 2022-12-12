@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Episodes</title>
+
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Jolly+Lodger&family=Righteous&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="episodes-css.css">
+
+
+</head>
+<body>
+    
+     <!-- Navigation Bar	-->
+	<header>
+
+		<nav>
+			<a href="index.html" class="h1-nav"><h1>FlabberGhosted</h1></a>
+
+			<div class="menu">
+				<a href="about.html">About</a>
+				<a href="merchandise.html">Merchandise</a>
+				<a href="episodes.html">Episodes</a>
+				<a href="contact.html">Contact</a>
+				<a href="https://open.spotify.com/track/45tBj0AhlTvO9ALV7t8anQ?si=4b107ac86d784cd8" target ="_blank" class="list-button"><img class="spotify-nav" src="pics/spotify-icon.png" alt=""></a>
+			</div>
+
+			<button class="hamburger">
+				<span class="material-icons">menu</span>
+			</button>
+		</nav>
+
+		<div class="mobile-menu">
+			<a href="about.html">About</a>
+			<a href="merchandise.html">Merchandise</a>
+			<a href="episodes.html">Episodes</a>
+			<a href="contact.html">Contact</a>
+		</div>
+	</header>
+
+    <script src="nav-bar-js.js"></script>
+	<!-- End of Navigation Bar	-->
+
+    <div class="episode-container">
+        <h1 class="ep-title">Episode 1 "The Blue Eyed Six</h1>
+        <div class="ep-desc">
+            <picture>
+                <source media="(max-width: 768px)" srcset="pics/episode-pic-small.webp">
+                <source media="(max-width: 1130px)" srcset="pics/episode-pic-medium.webp">
+                <source media="(min-width: 1440px)" srcset="pics/episode-pic.webp">
+                <img src="pics/episode-pic.webp" alt="">
+            </picture>
+            <div class="ep-shortdesc">
+                <p class="desc">In this weeks episode, we discuss the true crime of the Blue Eyed Six which happened in Lebanon, Pennsylvania. Then we get into the paranormal aspect of it of the haunting of Moonshine Church. We even go there ourselves and recount our expereience, tune in to find out if we met a dead murderer! <br>
+                    <br> Show Notes: <br>
+                    00:00 - Introduction <br>
+                    15:45 - Blue Eyed Six story <br>
+                    42:36 - Reactions <br>
+                    46:20 - Findings from the Hunt <br>
+                    61:57 - Conclusion
+                </p>
+                <a href="https://open.spotify.com/track/45tBj0AhlTvO9ALV7t8anQ?si=4b107ac86d784cd8" target ="_blank" class="spot-href"><button  class="spotify-button"><img class="spotify-pill" src="pics/spotify-icon.png" alt=""> Episode 1</button></a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+body {
+    background-color: black;
+    cursor: url('https://upload.wikimedia.org/wikipedia/commons/9/96/OpenMoji-color_1F47B.svg'), auto;
+}
+
+.about-section {
+    display: flex;
+    margin: auto;
+    margin-top: 80px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.desc {
+    padding-top: 10px;
+    padding-left: 0px;
+    padding-right: 100px;
+    font-size: 15pt;
+    color: white;
+    font-family: 'Averia Libre', sans-serif;
+}
+
+.about-head {
+    font-family: 'Jolly Lodger', cursive;
+    color: #FF0505;
+    font-size: 50pt;
+    font-weight: lighter;
+    letter-spacing: 5px;
+}
+
+.hosts-head {
+    font-family: 'Jolly Lodger', cursive;
+    color: #FF0505;
+    font-size: 50pt;
+    font-weight: lighter;
+    letter-spacing: 5px;
+    margin: 50px;
+}
+
+.profiles {
+    width: 100%;
+    display: flex;
+  }
+
+.profile-card {
+    max-width: 300px;
+    margin: auto;
+    margin-top: 5px;
+    text-align: left;
+    font-family: 'Averia Libre', sans-serif;
+    background-color: #F24B0F;
+  }
+
+  p , h2 {
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+  }
+
+  h2 {
+    font-size: 25pt;
+  }
+
+  p {
+    font-size: 12pt;
+  }
+
+  @media (max-width: 769px) and (max-width: 1130px) {
+    .profiles {
+        display: inline-block;
+    }
+
+    .profile-card {
+        margin-top: 50px;
+    }
+
+    .about-section {
+        display: inline-block;
+        margin: auto;
+        margin-top: 80px;
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+
+    .desc {
+        padding-top: 10px;
+        padding-left: 0px;
+        padding-right: 20px;
+        padding-bottom: 50px;
+        font-size: 12pt;
+        color: white;
+        font-family: 'Averia Libre', sans-serif;
+    }
+    
+    .about-head {
+        font-family: 'Jolly Lodger', cursive;
+        color: #FF0505;
+        font-size: 40pt;
+        font-weight: lighter;
+        letter-spacing: 5px;
+    }
+
+    .hosts-head {
+        font-family: 'Jolly Lodger', cursive;
+        color: #FF0505;
+        font-size: 40pt;
+        font-weight: lighter;
+        letter-spacing: 5px;
+        margin: 50px;
+    }
+}
