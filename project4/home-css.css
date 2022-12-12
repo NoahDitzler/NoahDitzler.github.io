@@ -134,6 +134,7 @@ body {
 		overflow: hidden;
 		display: flex;
 		align-content: center;
+		overflow: hidden;
 	}
 	
 	.home-title {
@@ -208,6 +209,7 @@ body {
 		overflow: hidden;
 		display: flex;
 		align-content: center;
+		overflow: hidden;
 	}
 	
 	.home-title {
