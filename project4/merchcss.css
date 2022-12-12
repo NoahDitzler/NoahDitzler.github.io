@@ -1,0 +1,46 @@
+body {
+    background-color: #000;
+    cursor: url('https://upload.wikimedia.org/wikipedia/commons/9/96/OpenMoji-color_1F47B.svg'), auto;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 #FF0505;
+    max-width: 300px;
+    margin: auto;
+    margin-top: 80px;
+    text-align: center;
+    font-family: 'Averia Libre', sans-serif;;
+    background-color: #F24B0F;
+  }
+  
+  .price {
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+  }
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: black;
+    background-color: orange;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  }
+
+  .shop {
+    width: 100%;
+    display: flex;
+  }
+
+  @media (max-width: 769px) and (max-width: 1130px) {
+    .shop {
+        display: inline-block;
+    }
+  }

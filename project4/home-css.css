@@ -8,6 +8,7 @@ body {
 	background-color: rgb(0, 0, 0);
 	width: 100%;
 	height: 100vh;
+	cursor: url('https://upload.wikimedia.org/wikipedia/commons/9/96/OpenMoji-color_1F47B.svg'), auto;
 }
 
 .desc {
@@ -18,6 +19,14 @@ body {
 	text-align: left;
 	padding-left: 60px;
 	padding-right: 60px;
+}
+
+.spot-href {
+	text-decoration: none;
+}
+
+.person-pic {
+	overflow: hidden;
 }
 
 
@@ -39,7 +48,7 @@ body {
 .welcome-content {
 	font-family: 'Averia Libre';
 	font-weight:lighter;
-	color: #FFF;
+	color: #FF0505;
 	margin-left: 20%;
 }
 
@@ -50,7 +59,7 @@ body {
 }
 
 .home-title {
-	color: white;
+	color: #FF0505;
 	font-size: 110px;
 	font-family: 'Jolly Lodger', cursive;
 	letter-spacing: 5px;
@@ -65,7 +74,7 @@ body {
 .spotify-button {
 	color: black;
 	background-color: orange;
-	font-family: 'Averia Libre';
+	font-family: 'Averia Libre', sans-serif;
 	font-weight: bolder;
 	font-size: 20px;
 	margin: auto;
@@ -81,7 +90,7 @@ body {
 }
 
 .spotify-button:hover {
-	background-color: aqua;
+	background-color: white;
 }
 
 .spotify-pill {
@@ -90,119 +99,86 @@ body {
 	margin-right: 5px;
 }
 
-nav {
-	position: relative;
-	z-index: 99;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	background-color: #F24B0F;
-	color: rgb(0, 0, 0);
-	padding: 1rem 1.5rem;
-}
 
-nav h1 {
-    letter-spacing: 3px;
-	font-family: 'Jolly Lodger', cursive;
-    font-weight: lighter;
-    font-size: 32.36pt;
-	padding: 0.5rem 1rem;
-	padding-right: calc(1rem - 5px);
-	border: 2px solid rgb(0, 0, 0);
-}
-
-nav h1:hover {
-	color: rgb(255, 255, 255);
-    cursor: pointer;
-    border: 2px solid rgb(255, 255, 255);
-    transition: .6s;
-    filter: blur(0);
-}
-
-.menu {
-	display: none;
-	align-items: center;
-	margin: 0 -1rem;
-}
-
-.menu a {
-    font-family: 'Averia Libre';
-    font-size: 20pt;
-	margin: 0 1rem;
-	color: rgb(0, 0, 0);
-	text-decoration: none;
-	transition: 0.3s;
-}
-
-.menu a:hover {
-	color: crimson;
-}
-
-.hamburger {
-	appearance: none;
-	outline: none;
-	border: none;
-	background: none;
-	cursor: pointer;
-
-	display: block;
-	width: 2rem;
-	height: 2rem;
-}
-
-.hamburger span {
-	color: #FFF;
-	font-size: 2rem;
-}
-
-.mobile-menu {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	z-index: 98;
-
-	padding-top: 6rem;
-	opacity: 0;
-	transform: translateY(-100%);
-	background-color: #000;
-	color: #FFF;
-	transition: 0.3s;
-}
-
-.mobile-menu.is-open {
-	opacity: 1;
-	transform: translateY(0);
-}
-
-.mobile-menu a {
-	display: block;
-	padding: 1rem;
-	color: #FFF;
-	text-align: center;
-	text-decoration: none;
-	font-size: 1.25rem;
-	transition: 0.3s;
-}
-
-.mobile-menu a:hover {
-	color: crimson;
-	background-color: #FFF;
-}
-
-@media (min-width: 768px) {
-	.mobile-menu, .hamburger {
-		display: none;
+@media (max-width: 769px) and (max-width: 1130px) {
+	.welcome , .home-img {
+		width: 50%;
+		height: auto;
+		border: #FFF 30px;
+		flex-direction: column;
+		margin-left: 0;
 	}
 
-	.menu {
+	.home-content , .welcome-content {
+		width: 100%;
+		height: auto;
+		margin-left: 0;
+		flex-direction: row;
+		padding-top: 50px;
+	}
+
+	.desc {
+		width: 400px;
+		color: white;
+		font-size: 10pt;
+		margin-top: 30px;
+		text-align: left;
+		padding-left: 0px;
+		padding-right: 20px;
+		margin-left: 100px;
+	}
+
+	.person-pic {
+		margin-left: 20px;
+		overflow: hidden;
 		display: flex;
+		align-content: center;
 	}
 	
+	.home-title {
+		color:#FF0505;
+		font-size: 70pt;
+		font-family: 'Jolly Lodger', cursive;
+		letter-spacing: 5px;
+		font-weight: lighter;
+	}
+	
+	.home-subtitle {
+		font-size: 25pt;
+		margin-top: 0;
+	}
+	
+	.spotify-button {
+		color: black;
+		background-color: orange;
+		font-family: 'Averia Libre';
+		font-weight: bolder;
+		font-size: 12px;
+		margin: auto;
+		margin-top: 30px;
+		padding: 1px 10px;
+		border-radius: 100px;
+		display: flex;
+		align-items: center;
+		transition: .3s linear;
+		cursor: pointer;
+		outline: none;
+		border: none;
+	}
+	
+	.spotify-button:hover {
+		background-color: white;
+	}
+	
+	.spotify-pill {
+		width: 40px;
+		height: auto;
+		margin-right: 5px;
+	}
 }
 
-@media (max-width: 768px) {
+
+@media (min-width: 360px) and (max-width: 768px) {
 	.welcome , .home-img {
 		width: 100%;
 		height: auto;
@@ -214,26 +190,27 @@ nav h1:hover {
 	.home-content , .welcome-content {
 		width: 100%;
 		height: auto;
-		margin-left: 0;
 		flex-direction: column-reverse;
 	}
 
 	.desc {
 		width: 400px;
 		color: white;
-		font-size: 12px;
+		font-size: 10pt;
 		margin-top: 30px;
 		text-align: left;
-		padding-left: 40px;
-		padding-right: 40px;
+		margin-left: 40px;
 	}
 
 	.person-pic {
 		margin-left: 20px;
+		overflow: hidden;
+		display: flex;
+		align-content: center;
 	}
 	
 	.home-title {
-		color: white;
+		color: #FF0505;
 		font-size: 50px;
 		font-family: 'Jolly Lodger', cursive;
 		letter-spacing: 5px;
@@ -264,7 +241,7 @@ nav h1:hover {
 	}
 	
 	.spotify-button:hover {
-		background-color: aqua;
+		background-color:white;
 	}
 	
 	.spotify-pill {
